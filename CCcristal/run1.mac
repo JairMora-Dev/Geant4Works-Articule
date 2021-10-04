@@ -1,0 +1,30 @@
+# run1.mac
+#
+/control/verbose 0
+/tracking/verbose 2
+#
+/run/initialize
+#
+/gps/particle proton
+
+
+/gps/pos/type Point
+/gps/pos/centre 0. 0. -1.6 m
+# the above two can be replaced by a single command
+#/gps/position 0. 0. 1. m
+#
+/gps/ang/type iso
+/gps/ang/mintheta 180 deg
+/gps/ang/maxtheta 177 deg
+/gps/energy 5.25 MeV
+
+
+
+
+
+# 
+###/control/execute vis.mac
+#
+/run/printProgress 10000
+#
+/run/beamOn 100
